@@ -15,8 +15,14 @@ h_walls = 4;
 //rotate([90, 0, 0])
 //translate([0, 0, 3])
 //backlight();
-//bottom();
-walls();
+kit_frame();
+
+module kit_frame(){
+    bottom();
+    //color("purple")
+    translate([0, 0, h_walls/2+thickness_bottom/2])
+    walls();
+}
 
 module walls() {
     difference() {
