@@ -11,24 +11,7 @@ w_back = 70;
 h_back = 45;
 thickness_back = 1;
 h_walls = 4;
-gap_backlight = 1.5;
 
-
-//rotate([90, 0, 0])
-//translate([0, 0, 4])
-//backlight();
-//kit_frame();
-//akkum18650();
-build_frame();
-
-module build_frame() {
-    translate([0, 0, h_back/2+2*gap_backlight])
-    rotate([90, 0, 0])
-    kit_frame();
-    translate([0, d_akkum/2+thickness_bottom, d_akkum/2])
-    rotate([0, 90, 0])
-    akkum18650();    
-}
 module kit_frame(){
     bottom();
     translate([0,0,h_walls/2+thickness_bottom/2])
