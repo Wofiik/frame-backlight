@@ -3,9 +3,13 @@ use <akkum18650.scad>
 
 echo("Работа Полина Тугбаева");
 build_frame();
+
 d_akkum=18;
 h_akkum=65;
+
+thickness_bottom = 2;
 gap_backlight = 1.5;
+
 w_back = 70;
 h_back = 45;
 
