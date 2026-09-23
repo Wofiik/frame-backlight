@@ -11,6 +11,9 @@ w_back = 70;
 h_back = 45;
 thickness_back = 1;
 h_walls = 4;
+gap_backlight = 1.5;
+
+kit_frame();
 
 module kit_frame(){
     bottom();

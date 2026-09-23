@@ -5,6 +5,7 @@
 Model for 3D-printing of language OpenScad.
 Backlight powered from akkum 18650 LiIon.
 
+![commonMD](build_frame_2akkum_openscad.png)
 ![commonMD](build_frame_openscad.png)
 
 # Hyperlinks
