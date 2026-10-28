@@ -10,9 +10,10 @@ h_walls = 4;
 thickness_walls = 2;
 gap_backligh = 1.5;
 
-kit_controller();
+//kit_controller();
 //walls(); 
 //debug_controller();
+frame_controller();
 
 module frame_controller() {
 difference() {
