@@ -19,7 +19,9 @@ h_walls = 4;
 gap_backlight = 1.5;
 w_controller = 20;
 
-kit_frame();
+//kit_frame();
+
+frame_controller();
 //translate([1, 0, 0])
 //debug_controller(); 
 //frame_debug(); 
@@ -27,11 +29,13 @@ kit_frame();
 //window_frame();
 //walls();
 
-for(i=[1:6]) {
-    echo("i = ", i);
-    translate([i*3, 0, 0])
-    color("red")
-    cylinder(h=30, d=2, center=true, $fn=32);
+module for_wires() {
+    for(i=[1:6]) {
+        echo("i = ", i);
+        translate([i*3, 0, 0])
+        color("red")
+        cylinder(h=30, d=2, center=true, $fn=32);
+ }
 }
 
 module window_frame(){

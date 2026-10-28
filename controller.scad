@@ -13,7 +13,13 @@ gap_backligh = 1.5;
 //kit_controller();
 //walls(); 
 //debug_controller();
-frame_controller();
+test_print_walls_frame();
+
+module test_print_walls_frame() {
+    frame_controller();
+    translate([-w_controller-widht_frame_window-2, 0, h_walls/2])
+    walls();
+}
 
 module frame_controller() {
 difference() {
